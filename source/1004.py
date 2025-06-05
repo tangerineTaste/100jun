@@ -7,10 +7,8 @@ for t in range(term):
     c = 0
     gps = [int(i) for i in input().split(' ')]
     circles_count = int(input())
-    circles = []
     for i in range(circles_count):
-        circles.append([int(i) for i in input().split(' ')])
-    for circle in circles:
+        circle = ([int(i) for i in input().split(' ')])
         if ((gps[0]-circle[0])**2 + (gps[1]-circle[1])**2)**0.5 < circle[2] and \
             ((gps[2]-circle[0])**2 + (gps[3]-circle[1])**2)**0.5 < circle[2]:
             pass
